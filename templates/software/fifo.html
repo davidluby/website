@@ -1,0 +1,29 @@
+{% extends 'skeleton.html' %}
+
+{% block title %}
+   FIFO Algorithm
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/micro.css">
+{% endblock %}
+
+{% block content %}
+    <div class="tile">
+        <h1>
+            First In, First Out Algorithm
+        </h1>
+        <p>
+            The linked queue is a dynamic data structure that is useful for processing dynamic data sets in microcontrollers. These queues are made up of a
+            sequence of nodes and are best described starting at this level.
+        </p>
+        <p>
+            Each node <i>contains</i> at least two things--its value and a pointer. The value of the the node can be assigned to any data type. Now, zoom out
+            one step and imagine two of these nodes side-by-side, each containing a unique value and a pointer. 
+
+            There is nothing stopping a node from having more than one of either or both of
+            these.
+        </p>
+    </div>
+
+{% endblock %}

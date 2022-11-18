@@ -1,0 +1,158 @@
+{% extends 'skeleton.html' %}
+
+{% block title %}
+   Microcontrollers
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/micro.css">
+{% endblock %}
+
+{% block content %}
+    <div class="tile">
+        <h1>
+            Arduino Overview
+        </h1>
+        <div class="sb-parent-text">
+            <div class="sb-left" align="left">
+                <p>
+                A high-level description of an Arduino board can be reduced to
+                a microcontroller (MCU) and a printed circuit board (PCB),
+                emphasizing the MCU as the essential tool and the PCB as its
+                interfacing environment. The
+                <a 
+                    href = "https://www.microchip.com/en-us/product/ATmega328P"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer">Atmel ATmega 328P</a>
+                (328P) MCU plus an Arduino PCB submit the Arduino Uno to this
+                description. Interaction with the 328P is facilitated by the
+                PCB it sits on, however, plenty of users elect to interface
+                with these chips using a
+                <a
+                    href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer">custom PCB</a> or even just a
+                    <a
+                        href = "https://www.youtube.com/watch?v=YXtj6nh_8dA&ab_channel=0033mer"
+                        class="inline"
+                        target="_blank"
+                        rel="noopener noreferrer">breadboard</a>. 
+                </p>
+                <p>
+                    MCU instructions are typically programmed in C or C++ using an
+                    Integrated Development Environment (IDE), like Atmel's
+                    <a
+                        href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
+                        class="inline"
+                        target="_blank"
+                        rel="noopener noreferrer">Microchip Studio</a>.
+                    Other languages and IDE's like Assembly or Python and
+                    Visual Studio or Arduino IDE can be used. The
+                    applications presented here are written mostly in C using
+                    Microchip Studio.
+                </p>
+                <p>
+                    These instruction files (scripts) are compiled, or translated,
+                    into files an MCU can understand, called hex (hexadecimal)
+                    files, and uploaded to the MCU from a computer. Instructions
+                    given to an MCU often map a system of inputs to program logic
+                    which maps a system of outputs back through the PCB for some
+                    function, like controlling an LED.
+                </p>
+            </div>
+            <div class="sb-two" id="config">
+                
+            </div>
+        </div>
+       <h2>
+            Essentials
+       </h2>
+            <p>
+                There are a number of fundamental concepts and components
+                essential for interaction with Arduino boards. The following
+                is a <i>very</i> brief description of those most universal to
+                the successful marriage of software and hardware.
+            </p>
+            <ul>
+                <li>
+                    Binary (logic) signals: a digital signal that can either
+                    be high or low, corresponding to a 1 or 0 in logic terms
+                    and 5 or 0 volts (usually) in physical terms.
+                </li>
+                <li>
+                    Pins and ports: a pin is an electrical lead on the MCU
+                    that is connected to the PCB, also called a bit. They are
+                    organized in bunches, called ports, and can send or
+                    receive signals to or from a given system, respectively.
+                </li>
+                <li>
+                    Registers: a register occupies a space in memory that data
+                    can be read from or written to. Data read from registers
+                    often represent system inputs, while data written to them
+                    represent outputs. A port is a type of register.
+                </li>
+                <li>
+                    Special function registers (SFR): SFR's are similar to a
+                    traditional register, except they have special bits called
+                    control and flag bits. Writing to a control bit toggles
+                    native MCU functions, while reading from a flag bit
+                    typically indicates some status regarding a triggering
+                    condition in the MCU. These register functions ship with
+                    the chip as opposed to plain registers which inherit
+                    functionality from instruction logic.
+                </li>
+            </ul>
+            <p>
+                A real synthesis of these basic elements can be illustrated
+                by an Arduino and a mechanical push button used to light up an
+                LED. Pressing the button completes a circuit that sends a 5
+                volt (high) signal to a pin connected to one end. The
+                unpressed case sends the same 5 volt signal to ground and a
+                low signal to the pin. Software instructs the MCU to read the
+                signal from the memory address register (MAR) corresponding to
+                the input pin and submit the binary signal to program logic.
+                The logic maps the input to an output, responding through a
+                different pin using its unique MAR. The output pin sends
+                a 5 or 0 volt signal to the LED circuit, either turning it on
+                or off depending on the MCU's instructions.
+            </p>
+    </div>
+    <div class="tile">
+        <h1>
+            Configuration
+        </h1>
+            <p>
+                The 
+                <a
+                    href = "https://store.arduino.cc/products/arduino-mega-2560-rev3"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer">Arduino Mega 2560</a> is
+                comprised of an
+                <a
+                    href = "https://www.microchip.com/en-us/product/ATMEGA2560"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer">Atmel ATmega 2560</a> (2560)
+                microprocessor and Arduino board. The
+                <a
+                    href = "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer">microprocessor's datasheet</a>
+                and
+                <a
+                    href = "https://www.electronicshub.org/wp-content/uploads/2021/01/Arduino-Mega-Pinout.jpg"
+                    class="inline"
+                    target="_blank"
+                    rel="noopener noreferrer"> Arduino board pinout</a> are
+                used for the marriage of software and hardware. Remaining
+                site content is confined to applications using this
+                microcontroller and board but can be replicated in others
+                following the same principles.
+            </p>
+    </div>
+
+{% endblock %}

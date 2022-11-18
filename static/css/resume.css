@@ -1,0 +1,22 @@
+/* this document houses resume-specific css styling*/
+
+/* class definitions*/
+.sb-mar-res-top {
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.tile {
+    border-radius: .75rem/.75rem;
+    border: .05rem solid #d2d2d2;
+    background-color: rgb(255, 255, 255);
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* id definitions*/
+#vert-align {
+    vertical-align: top;
+}

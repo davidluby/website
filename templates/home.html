@@ -1,0 +1,125 @@
+{% extends 'skeleton.html' %}
+
+{% block title %}
+   Homepage
+{% endblock %}
+
+{% block head %}
+   <link rel="stylesheet" href="/static/css/home.css">
+{% endblock %}
+
+{% block content %}
+
+<!--welcome-->
+   <div 
+      class="sb-parent sb-mar-hom container-fluid">
+      <div
+         class="sb-two tile" align="left">
+         <h1>
+            Welcome
+         </h1>
+         <p>
+            Thank you for visiting my website. I am a self-taught software and
+            firmware engineering enthusiast and mechanical engineering student
+            at the University of New Hampshire. My hope is that the content
+            presented here will better advertise my skills and career
+            interests ahead of my graduation in December 2022.
+         </p>
+         <p>
+            I encourage viewers to start here and with my resume page for an
+            overview of my experiences and skills&#8212;the other site pages enter
+            much more depth relative to individual topics.
+            <i><b>Please reach out to me via
+            <a
+               href="https://linkedin.com/in/david-luby/"
+               class="inline"
+               target="_blank"
+               rel="noopener noreferrer">
+                  LinkedIn</a>
+            or email if you are interested in hearing more from me.</b></i>
+         </p>
+      </div>
+
+      <div
+         class="sb-two tile" align="center">
+         <div
+            id="avatar">
+         </div>
+         <h2>
+            <b>David Luby</b>
+         </h2>
+         <p 
+            class="card-top">
+            BS, Mechanical Engineering, University of New Hampshire - Dec' 22
+         </p>
+         <div
+            class="card-body">
+            <a 
+               href="https://linkedin.com/in/david-luby/"
+               class="d-inline-block align-middle logo-linked pad-strip mar-strip"
+               target="_blank"
+               rel="noopener noreferrer">
+            </a> | david.luby@unh.edu | Boston Area
+         </div>
+      </div>
+   </div>
+
+<!--flask-->
+   <div 
+      class="sb-parent sb-mar-hom container-fluid">
+      <div 
+         class="sb-two tile" align="left">
+         <h1>
+            Python-Flask Website Portfolio
+         </h1>
+         <p>
+            This website is a web development project created using a
+            Python-Flask framework and deployed with a CI/CD pipline via AWS
+            Elastic Beanstalk. My knowledge of Javascript, SQL, HTML, and CSS
+            is represented by this project.
+         </p>
+         <p>
+            I look forward to continued updates to this site as I have time,
+            but developing this in parallel with school has been and will
+            continue to be challenging. I will leave web development there,
+            as user interaction is better than anything I can put into words.
+         </p>
+      </div>
+      <div
+         class="sb-two tile" align="center">
+         <h2>
+            Visitor Count:
+         </h2>
+         <p>
+            count goes here
+         </p>
+      </div>
+   </div>
+
+<!--bike-->
+   <div
+      class="sb-parent sb-mar-hom container-fluid">
+      <div
+         class="sb-two tile">
+         <div 
+            id="bike">
+         </div>
+      </div>
+      <div 
+         class="sb-two tile" align="left">
+         <h1>
+            Motorized Bicycle
+         </h1>
+         <p>
+            The best aspect of this project was that it did not end until I
+            sold the bike. It turns out that adding a four-stroke engine to
+            the frame of a cheap bicycle tends to create more problems than it
+            solves, requiring constant maintenance in response to vibrations
+            never meant for a pedal bike. Experiential improvement by
+            iteration helped unveil complex systems as large sums of simple
+            solutions.
+         </p>
+      </div>
+   </div>
+
+{% endblock %}
