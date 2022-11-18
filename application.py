@@ -69,5 +69,5 @@ def fea():
 # introducing main module guard
 if __name__ == 'main':
     # remove debug output for production deployment (maybe, no secrets here)
-    application.debug = True
+    #application.debug = True
     application.run()
