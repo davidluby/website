@@ -1,0 +1,40 @@
+{% extends 'skeleton.html' %}
+
+{% block title %}
+   Fourier Transform
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/micro.css">
+{% endblock %}
+
+{% block content %}
+    <div class="tile">
+        <h1>
+            Fourier Transform
+        </h1>
+            <p>
+                Any arbitrary signal can be replicated by sums, or collections, of constituent signals. The figures below demonstrate this phenomena in replicating the function
+                y(t) = 3t <i>exactly</i> using unique sums of constituent signals.
+            </p>
+            <p>
+                The same phenomena can be observed using sums of sinusoids to replicate signals. Most basically, 2sin(t) can be characterized by and is exactly equal to sin(t) + sin(t) or
+                4sin(t) - 2sin(t). The former and latter are reffered to as constructive and destructive interference, where the former results in an increase in amplitude and a reduction
+                in the latter.
+            </p>
+            <p>
+                Each summation of constituent signals used thus far resulted in a perfect replication of the desired arbitrary signal, but perfection is replaced by approximation in
+                practice. Below are four approximations of a piecewise, triangular signal using <i>n</i> sinusoids. Notice that as <i>n</i> increases, or approaches infinity, the accuracy
+                of the approximatation, or replication, increases.
+            </p>
+            <p>
+                Each constituent sinusoid interferes--constructively or destructively--with each of the others. The result as the number, <i>n</i>, of constituent signals increases
+                is increased accuracy of approximation. But, what if there was a way to do this backwards, such that the replicated signal becomes the input, and a sum of constituent
+                signals are the new output? Enter the Fourier transform--a mathematical operation that converts an arbitrary signal into a sum of sinusoids.
+            </p>
+            <p>
+                In theory, this is an infinite sum of sinusoids, but 
+            </p>
+    </div>
+
+{% endblock %}

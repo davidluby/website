@@ -38,9 +38,9 @@ def big():
 def fifo():
     return render_template('software/fifo.html')
 
-@application.route('/four.html')
-def four():
-    return render_template('software/four.html')
+@application.route('/fft.html')
+def fft():
+    return render_template('software/fft.html')
 
 
 
@@ -59,7 +59,9 @@ def timer():
 @application.route('/controls.html')
 def ctrl():
     return render_template('mechanical/controls.html')
-
+@application.route('/fourier.html')
+def four():
+    return render_template('mechanical/fourier.html')
 @application.route('/fea.html')
 def fea():
     return render_template('mechanical/fea.html')
