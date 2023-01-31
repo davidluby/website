@@ -40,7 +40,7 @@ h2 {
 
 /* navbar buttons and logo not exactly centered due to hover expansion */
 .bar {
-    background: linear-gradient(to right, #0067e5, #002d65);
+    background: linear-gradient(to right, #007A33, #00672b);
     box-shadow: 0rem 0rem .2rem .005rem #000000;
 }
 .nav-but {
@@ -48,8 +48,8 @@ h2 {
     padding: .65rem;
     border: solid;
     border-width: 0rem;
-    border-top-width: .125rem;
-    border-bottom-width: .125rem;
+    border-top-width: .15rem;
+    border-bottom-width: .15rem;
     border-color: rgba(255, 255, 255, 0);
     transition: all 500ms;
 }
@@ -57,8 +57,8 @@ h2 {
     background-color: rgba(0, 0, 0, 0.415);
     border: solid;
     border-width: 0rem;
-    border-bottom-width: .125rem;
-    border-top-width: .125rem;
+    border-bottom-width: .15rem;
+    border-top-width: .15rem;
     border-bottom-color: rgba(255, 255, 255, 0);
     border-top-color: rgb(255, 255, 255);
 }
@@ -144,11 +144,9 @@ h2 {
     text-indent: .2rem;
 }
 .card-top {
-    margin-top: -.75rem;
-    font-size: 1rem;
+    font-size: 1.65rem;
 }
 .card-body {
-    margin-top: -2.25rem;
     font-size: 1rem;
 }
 .inline:hover {
@@ -158,9 +156,8 @@ h2 {
 
 /* id definitions*/
 #body-back {
+    border: 1px green;
     background-color:rgb(240, 240, 240);
-    margin-left: 7rem;
-    margin-right: 7rem;
 }
 
 /* debugging */

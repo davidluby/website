@@ -31,19 +31,13 @@
 /* id definitions*/
 
 #avatar {
-    background-image: url("/static/images/best - crop.jpg");
-    background-size: 100%;
-    background-repeat: no;
+    width: 50%;
+    height: auto;
     border-radius: 50%;
-    border: .075rem solid #0067e5;
-    height: 15rem;
-    width: 15rem;
+    border: .1rem solid #007A33;
 }
 #bike {
-    background-image: url("/static/images/bike.jpg");
-    background-size: 100%;
-    background-repeat: no;
+    width: 75%;
+    height: auto;
     border-radius: 5%;
-    height: 18rem;
-    width: 18rem;
 }
