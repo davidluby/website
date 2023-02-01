@@ -11,10 +11,8 @@
 {% block content %}
 
 <!--welcome-->
-   <div 
-      class="sb-parent sb-mar-hom container-fluid">
-      <div
-         class="sb-two tile" align="left">
+   <div class="sb-parent sb-mar-hom">
+      <div class="sb-two tile" align="left">
          <h1>
             Welcome
          </h1>
@@ -24,18 +22,13 @@
          </p>
          <p>
             Start here and with my resume page for an overview of my experiences and projects. <i><b>Please reach out to me via
-            <a
-               href="https://linkedin.com/in/david-luby/"
-               class="inline"
-               target="_blank"
-               rel="noopener noreferrer">
-                  LinkedIn</a>
+            <a href="https://linkedin.com/in/david-luby/" class="inline" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
             or email if you are interested in hearing more from me.</b></i>
          </p>
       </div>
 
-      <div
-         class="sb-two tile">
+   <!--avatar-->
+      <div class="sb-two tile">
          <div>
             <img src="/static/images/best - crop.jpg" id ="avatar">
          </div>
@@ -44,7 +37,7 @@
                <b><i>David Luby</i></b>
             </h2>
             <p class="card-body mar-strip pad-strip">
-               <a href="https://linkedin.com/in/david-luby/" class="d-inline-block align-middle logo-linked" target="_blank" rel="noopener noreferrer"></a>
+               <a href="https://linkedin.com/in/david-luby/" class="d-inline-block align-middle" id="logo-linked" target="_blank" rel="noopener noreferrer"></a>
                | <i>davidluby273@gmail.com</i> | <i>Boston Area</i>
             </p>
             <p class="card-body mar-strip pad-strip">
@@ -55,42 +48,35 @@
    </div>
 
 <!--flask-->
-   <div 
-      class="sb-parent sb-mar-hom container-fluid">
-      <div 
-         class="sb-two tile" align="left">
+   <div class="sb-parent sb-mar-hom">
+      <div class="sb-two tile" align="left">
          <h1>
             Python-Flask Website Portfolio
          </h1>
          <p>
-            This is a web development project served via AWS Elastic Beanstalk using a CodePipeline with Git/GitHub. I learned Javascript, SQL, HTML, and CSS, integrating each of them with
+            This site is a web development project served via AWS Elastic Beanstalk with a CodePipeline using Git/GitHub. I learned Javascript, SQL, HTML, and CSS, integrating each of them with
             a Python-Flask web framework. All of the source code is on my <a href="https://github.com/davidluby/website" class="inline" target="_blank" rel="noopener noreferrer"> GitHub</a> 
             (check out my other repositories).
          </p>
       </div>
-      <div
-         class="sb-two tile" align="center">
+      <div class="sb-two tile" align="center">
          <h2>
-            Visitor Count:
+            Celtics Standings and Power Rankings
          </h2>
          <p>
-            count goes here
+            Tables go here
          </p>
       </div>
    </div>
 
 <!--bike-->
-   <div
-      class="sb-parent sb-mar-hom container-fluid">
-      <div
-         class="sb-two tile">
+   <div class="sb-parent sb-mar-hom">
+      <div class="sb-two tile">
          <div>
-            <img src="/static/images/bike.jpg"
-               id ="bike">
+            <img src="/static/images/bike.jpg"id ="bike">
          </div>
       </div>
-      <div 
-         class="sb-two tile" align="left">
+      <div class="sb-two tile" align="left">
          <h1>
             Motorized Bicycle
          </h1>

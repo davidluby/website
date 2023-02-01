@@ -1,23 +1,16 @@
-/* this document houses global css styling*/
+
+
+
+
+/* globals */
 html *{
-    font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
     font-size: 100%;
+    font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
 }
-
-/* element definitions */
-
-/* containers */
-body {
-    /*border: 3px solid rgb(128, 15, 0);*/
-}
-div {
-    /*border: 3px solid rgb(227, 216, 0);*/
-}
-ul {
-    /*border: 3px solid blue;*/
-}
-li {
-    /*border: 3px solid rgb(0, 227, 53);*/
+#body-back {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color:rgb(240, 240, 240);
 }
 a {
     /*border: 3px solid pink;*/
@@ -26,77 +19,71 @@ a {
 p {
     font-size: 1rem;
 }
-
-/* headings */
 h1 {
     font-size: 1.65rem;
 }
 h2 {
     font-size: 1.35rem;
 }
+.inline:hover {
+    text-decoration: underline;
+    color: #009dff;
+}
 
 
-/* class definitions */
 
-/* navbar buttons and logo not exactly centered due to hover expansion */
+
+/* navbar */
 .bar {
-    background: linear-gradient(to right, #007A33, #00672b);
+    background: linear-gradient(to right, #007A33, #004f21);
     box-shadow: 0rem 0rem .2rem .005rem #000000;
 }
 .nav-but {
-    font-size: 1.25rem;
-    padding: .65rem;
+    font-size: 1.65rem;
+    padding: .35rem;
+    margin: 0rem;
+    
     border: solid;
     border-width: 0rem;
     border-top-width: .15rem;
-    border-bottom-width: .15rem;
     border-color: rgba(255, 255, 255, 0);
     transition: all 500ms;
 }
 .nav-but:hover {
     background-color: rgba(0, 0, 0, 0.415);
-    border: solid;
-    border-width: 0rem;
-    border-bottom-width: .15rem;
-    border-top-width: .15rem;
-    border-bottom-color: rgba(255, 255, 255, 0);
     border-top-color: rgb(255, 255, 255);
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .logo {
-    background-image: url("/static/images/logo.svg");
-    background-size: 100%;
-    height: 3rem;
-    width: 3rem;
     border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    background-image: url("/static/images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
     transition: all 500ms;
 }
 .logo:hover {
     background-image: url("/static/images/logo.PNG");
     background-size: 100%;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
 }
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0rem;
-}
+
+
+
 
 /* side by sides */
 .sb-parent {
     text-align: center;
-    padding: 0rem;
-}
-.sb-parent-text {
-    padding: 0rem;
 }
 .sb-two {
     display: inline-block;
     vertical-align: middle;
-    margin: 0rem;
-    padding: 1rem;
     max-width: 49%;
-    min-width: 20%;
+    min-width: 35%;
 }
 .sb-three {
     display: inline-block;
@@ -125,6 +112,9 @@ h2 {
     max-width: 49%;
 }
 
+
+
+
 /* general */
 .strip {
     margin: 0rem;
@@ -136,10 +126,6 @@ h2 {
 .pad-strip {
     padding: 0rem;
 }
-.pages {
-    margin-top: 7.5rem;
-    margin-bottom: 7.5rem;
-}
 .indent {
     text-indent: .2rem;
 }
@@ -149,16 +135,10 @@ h2 {
 .card-body {
     font-size: 1rem;
 }
-.inline:hover {
-    text-decoration: underline;
-    color: #009dff;
-}
 
-/* id definitions*/
-#body-back {
-    border: 1px green;
-    background-color:rgb(240, 240, 240);
-}
+
+
+
 
 /* debugging */
 .d1 {
@@ -169,4 +149,16 @@ h2 {
 }
 .d3 {
     border: 1px solid rgb(2, 0, 128);
+}
+body {
+    /*border: 3px solid rgb(128, 15, 0);*/
+}
+div {
+    /*border: 2px solid rgb(0, 110, 255);*/
+}
+ul {
+    /*border: 3px solid blue;*/
+}
+li {
+    /*border: 3px solid rgb(0, 227, 53);*/
 }

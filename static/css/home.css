@@ -1,43 +1,36 @@
 /* this document houses homepage-specific styling*/
 
 /* class definitions*/
-
-.tile {
-    border-radius: .75rem/.75rem;
-    border: .05rem solid #d2d2d2;
-    background-color: rgb(255, 255, 255);
-}
 .sb-mar-hom {
-    margin-top: 5rem;
+    margin-top: 15%;
 }
-.logo-linked {
-    background-image: url("/static/images/logo-linked.svg");
-    background-size: 100%; 
-    background-repeat: no;
-    margin: 0rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    transition: all 500ms;
-}
-.logo-linked:hover {
-    background-image: url("/static/images/logo-linked.png");
-    background-size: 100%;
-    background-repeat: no;
-    margin: 0rem;
-    height: 1.5rem;
-    width: 1.5rem;
-}
+
+
 
 /* id definitions*/
+#logo-linked {
+    margin: 0rem;
+    height: 1.75rem;
+    width: 1.75rem;
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/static/images/logo-linked.svg");
+    background-size: 85%;
+    transition: all 500ms;
+}
+#logo-linked:hover {
+    background-image: url("/static/images/logo-linked.png");
+    background-size: 100%;
+}
 #avatar {
-    width: 50%;
+    width: 45%;
     height: auto;
     border-radius: 50%;
     border: .1rem solid #007A33;
 }
 #bike {
-    width: 75%;
+    width: 50%;
     height: auto;
     border-radius: 5%;
 }
