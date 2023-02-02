@@ -9,35 +9,35 @@ html *{
 }
 @media screen and (width >= 900px){
     #body-back {
-        margin-top: 10vh;
+        margin-top: 50vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
 @media screen and (600px <= width < 900px){
     #body-back {
-        margin-top: 15vh;
+        margin-top: 50vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
 @media screen and (500px <= width < 600px){
     #body-back {
-        margin-top: 15vh;
+        margin-top: 50vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
 @media screen and (400px <= width < 500px){
     #body-back {
-        margin-top: 15vh;
+        margin-top: 50vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
 @media screen and (width < 400px){
     #body-back {
-        margin-top: 15vh;
+        margin-top: 50vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
