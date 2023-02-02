@@ -10,56 +10,64 @@
 
 {% block content %}
 
-<!--welcome-->
-   <div class="sb-parent sb-mar-hom">
-      <div class="sb-two tile" align="left">
+   <!--welcome-->
+   <div class="sb-mar-hom tmid">
+      <div class="sb-two ymid tleft">
          <h1>
             Welcome
          </h1>
          <p>
-            Thank you for visiting my website. I am a recent graduate from the University of New Hampshire with a degree in mechanical engineering. I created this website
-            to demonstrate my career interests&#8212;especially those not implied by my undergrad.
+            Thank you for visiting my website. I am a recent graduate from the University of New Hampshire with a degree in mechanical engineering. I developed this
+            website to advertise my career interests&#8212;especially those not native to mechanical engineering.
          </p>
          <p>
-            Start here and with my resume page for an overview of my experiences and projects. <i><b>Please reach out to me via
+            Start here and with the resume page for an overview of personal projects and experience. The remaining pages serve to provide background underlying some of the
+            projects and interests presented. <i><b>Please connect via
             <a href="https://linkedin.com/in/david-luby/" class="inline" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
-            or email if you are interested in hearing more from me.</b></i>
+            or email with any interest in discussing content in further depth.</b></i>
          </p>
       </div>
-
-   <!--avatar-->
-      <div class="sb-two tile">
+      <!--avatar-->
+      <div class="sb-two ymid">
          <div>
             <img src="/static/images/best - crop.jpg" id ="avatar">
          </div>
          <div>
-            <h2 class="card-top mar-strip">
+            <h2 class="mar-strip" id="card-top">
                <b><i>David Luby</i></b>
             </h2>
             <p class="card-body mar-strip pad-strip">
                <a href="https://linkedin.com/in/david-luby/" class="d-inline-block align-middle" id="logo-linked" target="_blank" rel="noopener noreferrer"></a>
                | <i>davidluby273@gmail.com</i> | <i>Boston Area</i>
             </p>
-            <p class="card-body mar-strip pad-strip">
+            <p class="mar-strip pad-strip" id="card-body">
                <i>BS, Mechanical Engineering, University of New Hampshire</i>
             </p>
          </div>
       </div>
    </div>
 
-<!--flask-->
-   <div class="sb-parent sb-mar-hom">
-      <div class="sb-two tile" align="left">
+   <!--scroll icon-->
+   <div class="tmid">
+      <img src="/static/images/scroll.png" class="" id="scrollPic">
+   </div>
+
+
+
+   <!--flask-->
+   <div class="sb-mar-hom tmid">
+      <div class="sb-two ymid tleft">
          <h1>
-            Python-Flask Website Portfolio
+            Python-Flask Web Portfolio
          </h1>
          <p>
-            This site is a web development project served via AWS Elastic Beanstalk with a CodePipeline using Git/GitHub. I learned Javascript, SQL, HTML, and CSS, integrating each of them with
-            a Python-Flask web framework. All of the source code is on my <a href="https://github.com/davidluby/website" class="inline" target="_blank" rel="noopener noreferrer"> GitHub</a> 
-            (check out my other repositories).
+            This website is served via AWS Elastic Beanstalk using a version-controlled CodePipeline facilitated by Git/GitHub. It synthesizes
+            Javascript, SQL, HTML, and CSS over a Python-Flask web framework. All the source code is on
+            <a href="https://github.com/davidluby/website" class="inline" target="_blank" rel="noopener noreferrer"> GitHub</a> 
+            (be sure to check out my other repositories).
          </p>
       </div>
-      <div class="sb-two tile" align="center">
+      <div class="sb-two ymid">
          <h2>
             Celtics Standings and Power Rankings
          </h2>
@@ -69,14 +77,12 @@
       </div>
    </div>
 
-<!--bike-->
-   <div class="sb-parent sb-mar-hom">
-      <div class="sb-two tile">
-         <div>
-            <img src="/static/images/bike.jpg"id ="bike">
-         </div>
-      </div>
-      <div class="sb-two tile" align="left">
+
+
+
+   <!--bike-->
+   <div class="sb-mar-hom tmid">
+      <div class="sb-two ymid tleft">
          <h1>
             Motorized Bicycle
          </h1>
@@ -89,6 +95,11 @@
             iteration helped unveil complex systems as large sums of simple
             solutions.
          </p>
+      </div>
+      <div class="sb-two ymid tmid">
+         <div>
+            <img src="/static/images/bike.jpg"id ="bike">
+         </div>
       </div>
    </div>
 

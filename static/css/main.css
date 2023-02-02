@@ -7,10 +7,40 @@ html *{
     font-size: 100%;
     font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
 }
-#body-back {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    background-color:rgb(240, 240, 240);
+@media (width >= 900px){
+    #body-back {
+        margin-top: 7.5%;
+        margin-bottom: 5%;
+        background-color:rgb(240, 240, 240);
+    }
+}
+@media (600px <= width < 900px){
+    #body-back {
+        margin-top: 10%;
+        margin-bottom: 7.5%;
+        background-color:rgb(240, 240, 240);
+    }
+}
+@media (500px <= width < 600px){
+    #body-back {
+        margin-top: 12.5%;
+        margin-bottom: 10%;
+        background-color:rgb(240, 240, 240);
+    }
+}
+@media (400px <= width < 500px){
+    #body-back {
+        margin-top: 15%;
+        margin-bottom: 12.5%;
+        background-color:rgb(240, 240, 240);
+    }
+}
+@media (width < 400px){
+    #body-back {
+        margin-top: 20%;
+        margin-bottom: 15%;
+        background-color:rgb(240, 240, 240);
+    }
 }
 a {
     /*border: 3px solid pink;*/
@@ -74,48 +104,10 @@ h2 {
 
 
 
-
-/* side by sides */
-.sb-parent {
-    text-align: center;
-}
-.sb-two {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 49%;
-    min-width: 35%;
-}
-.sb-three {
-    display: inline-block;
-    padding: 1rem;
-    max-width: 33%;
-    min-width: 33%;
-}
-.sb-left {
-    display: inline-block;
-    margin: 0rem;
-    padding: 0rem;
-    max-width: 55%;
-    vertical-align: top;
-
-}
-.sb-middle {
-    display: inline-block;
-    margin: 0rem;
-    padding: 1rem;
-}
-.sb-right {
-    display: inline-block;
-    margin: 0rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    max-width: 49%;
-}
-
-
-
-
 /* general */
+.indent {
+    text-indent: .2rem;
+}
 .strip {
     margin: 0rem;
     padding: 0rem;
@@ -126,18 +118,41 @@ h2 {
 .pad-strip {
     padding: 0rem;
 }
-.indent {
-    text-indent: .2rem;
+.tleft {
+    text-align: left;
 }
-.card-top {
-    font-size: 1.65rem;
+.tright {
+    text-align: right;
 }
-.card-body {
-    font-size: 1rem;
+.tmid {
+    text-align: center;
+}
+.ytop {
+    vertical-align: top;
+}
+.ybot {
+    vertical-align: center;
+}
+.ymid {
+    vertical-align: middle;
 }
 
 
+@media screen and (min-width: 900px){
+/* side by sides */
+    .sb-two {
+        display: inline-block;
+        max-width: 49%;
+        min-width: 35%;
+    }
+    .sb-three {
+        display: inline-block;
+        padding: 1rem;
+        max-width: 33%;
+        min-width: 20%;
+    }
 
+}
 
 
 /* debugging */

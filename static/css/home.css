@@ -3,11 +3,32 @@
 /* class definitions*/
 .sb-mar-hom {
     margin-top: 15%;
+    margin-bottom: 7.5%;
+}
+
+
+/* id definitions*/
+#avatar {
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
+    border: .1rem solid #007A33;
+}
+#card-top {
+    font-size: 1.65rem;
+}
+#card-body {
+    font-size: 1rem;
+}
+
+
+#scrollPic {
+    width: 3%;
+    height: auto;
 }
 
 
 
-/* id definitions*/
 #logo-linked {
     margin: 0rem;
     height: 1.75rem;
@@ -23,12 +44,8 @@
     background-image: url("/static/images/logo-linked.png");
     background-size: 100%;
 }
-#avatar {
-    width: 45%;
-    height: auto;
-    border-radius: 50%;
-    border: .1rem solid #007A33;
-}
+
+
 #bike {
     width: 50%;
     height: auto;
