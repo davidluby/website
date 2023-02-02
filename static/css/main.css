@@ -7,35 +7,35 @@ html *{
     font-size: 100%;
     font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
 }
-@media (width >= 900px){
+@media screen and (width >= 900px){
     #body-back {
         margin-top: 10vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
-@media (600px <= width < 900px){
+@media screen and (600px <= width < 900px){
     #body-back {
         margin-top: 15vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
-@media (500px <= width < 600px){
+@media screen and (500px <= width < 600px){
     #body-back {
         margin-top: 15vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
-@media (400px <= width < 500px){
+@media screen and (400px <= width < 500px){
     #body-back {
         margin-top: 15vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
 }
-@media (width < 400px){
+@media screen and (width < 400px){
     #body-back {
         margin-top: 15vh;
         margin-bottom: 7.5vh;
