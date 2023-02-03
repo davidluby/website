@@ -9,45 +9,34 @@
 {% endblock %}
 
 {% block content %}
-    <div class="tile">
-        <h1>
-            Arduino Overview
-        </h1>
-        <div class="sb-parent-text">
-            <div class="sb-two" align="left">
+    <div>
+        <!--overview-->
+        <div class="tmid">
+            <h1 class="tleft">
+                Arduino Overview
+            </h1>
+            <div class="sb-two ymid tleft">
                 <p>
                 A high-level description of an Arduino board can be reduced to
                 a microcontroller (MCU) and a printed circuit board (PCB),
                 emphasizing the MCU as the essential tool and the PCB as its
                 interfacing environment. The
-                <a 
-                    href = "https://www.microchip.com/en-us/product/ATmega328P"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer">Atmel ATmega 328P</a>
+                <a href = "https://www.microchip.com/en-us/product/ATmega328P" class="inline"
+                    target="_blank" rel="noopener noreferrer">Atmel ATmega 328P</a>
                 (328P) MCU plus an Arduino PCB submit the Arduino Uno to this
                 description. Interaction with the 328P is facilitated by the
                 PCB it sits on, however, plenty of users elect to interface
                 with these chips using a
-                <a
-                    href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer">custom PCB</a> or even just a
-                    <a
-                        href = "https://www.youtube.com/watch?v=YXtj6nh_8dA&ab_channel=0033mer"
-                        class="inline"
-                        target="_blank"
-                        rel="noopener noreferrer">breadboard</a>. 
+                <a href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
+                    class="inline" target="_blank" rel="noopener noreferrer">custom PCB</a> or even just a
+                    <a href = "https://www.youtube.com/watch?v=YXtj6nh_8dA&ab_channel=0033mer"
+                        class="inline" target="_blank" rel="noopener noreferrer">breadboard</a>. 
                 </p>
                 <p>
                     MCU instructions are typically programmed in C or C++ using an
                     Integrated Development Environment (IDE), like Atmel's
-                    <a
-                        href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
-                        class="inline"
-                        target="_blank"
-                        rel="noopener noreferrer">Microchip Studio</a>.
+                    <a href = "https://www.youtube.com/watch?v=nRrva24zqXY&ab_channel=BeingEngineers"
+                        class="inline" target="_blank" rel="noopener noreferrer">Microchip Studio</a>.
                     Other languages and IDE's like Assembly or Python and
                     Visual Studio or Arduino IDE can be used. The
                     applications presented here are written mostly in C using
@@ -62,13 +51,17 @@
                     function, like controlling an LED.
                 </p>
             </div>
-            <div class="sb-two" id="config">
-                
+            <div class="sb-two ymid">
+                <img src="/static/images/arduino.jpg" id="arduino">
             </div>
         </div>
-       <h2>
-            Essentials
-       </h2>
+
+
+        <!--essentials-->
+        <div>
+            <h1>
+                Essentials
+            </h1>
             <p>
                 There are a number of fundamental concepts and components
                 essential for interaction with Arduino boards. The following
@@ -118,41 +111,32 @@
                 a 5 or 0 volt signal to the LED circuit, either turning it on
                 or off depending on the MCU's instructions.
             </p>
-    </div>
-    <div class="tile">
-        <h1>
-            Configuration
-        </h1>
-            <p>
-                The 
-                <a
-                    href = "https://store.arduino.cc/products/arduino-mega-2560-rev3"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer">Arduino Mega 2560</a> is
-                comprised of an
-                <a
-                    href = "https://www.microchip.com/en-us/product/ATMEGA2560"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer">Atmel ATmega 2560</a> (2560)
-                microprocessor and Arduino board. The
-                <a
-                    href = "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer">microprocessor's datasheet</a>
-                and
-                <a
-                    href = "https://www.electronicshub.org/wp-content/uploads/2021/01/Arduino-Mega-Pinout.jpg"
-                    class="inline"
-                    target="_blank"
-                    rel="noopener noreferrer"> Arduino board pinout</a> are
-                used for the marriage of software and hardware. Remaining
-                site content is confined to applications using this
-                microcontroller and board but can be replicated in others
-                following the same principles.
-            </p>
+        </div>
+
+        
+        <!--configuration-->
+        <div>
+            <h1>
+                Configuration
+            </h1>
+                <p>
+                    The 
+                    <a href = "https://store.arduino.cc/products/arduino-mega-2560-rev3" class="inline"
+                    target="_blank" rel="noopener noreferrer">Arduino Mega 2560</a> is comprised of an
+                    <a href = "https://www.microchip.com/en-us/product/ATMEGA2560" class="inline"
+                        target="_blank" rel="noopener noreferrer">Atmel ATmega 2560</a> (2560)
+                    microprocessor and Arduino board. The
+                    <a href = "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf"
+                        class="inline" target="_blank" rel="noopener noreferrer">microprocessor's
+                        datasheet</a> and
+                    <a href = "https://www.electronicshub.org/wp-content/uploads/2021/01/Arduino-Mega-Pinout.jpg"
+                        class="inline" target="_blank" rel="noopener noreferrer"> Arduino board pinout</a> are
+                    used for the marriage of software and hardware. Remaining
+                    site content is confined to applications using this
+                    microcontroller and board but can be replicated in others
+                    following the same principles.
+                </p>
+        </div>
     </div>
 
 {% endblock %}

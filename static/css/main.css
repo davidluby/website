@@ -7,59 +7,43 @@ html *{
     font-size: 100%;
     font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
 }
-@media only screen and (min-width: 900px){
+@media screen and (max-width: 950px){
     #body-back {
-        margin-top: 7.5vh;
+        margin-top: 10vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
+    .alignleft {
+		float: none;
+	}
+	.alignright {
+		float: none;
+	}
 }
-@media only screen and (min-width: 600px) and (max-width: 899px){
+@media screen and (min-width: 950px){
     #body-back {
-        margin-top: 7.5vh;
+        margin-top: 10vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
     }
-}
-@media only screen and (min-width: 500px) and (max-width: 599px){
-    #body-back {
-        margin-top: 7.5vh;
-        margin-bottom: 7.5vh;
-        background-color:rgb(240, 240, 240);
+    /* side by sides */
+    .sb-two {
+        display: inline-block;
+        max-width: 49%;
+        min-width: 35%;
     }
-}
-@media only screen and (min-width: 400px) and (max-width: 499px){
-    #body-back {
-        margin-top: 7.5vh;
-        margin-bottom: 7.5vh;
-        background-color:rgb(240, 240, 240);
+    .sb-three {
+        display: inline-block;
+        max-width: 31vw;
+        min-width: 31vw;
     }
+    .alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
 }
-@media only screen and (max-width: 399px){
-    #body-back {
-        margin-top: 7.5vh;
-        margin-bottom: 7.5vh;
-        background-color:rgb(240, 240, 240);
-    }
-}
-a {
-    /*border: 3px solid pink;*/
-    text-decoration: none;
-}
-p {
-    font-size: 1rem;
-}
-h1 {
-    font-size: 1.65rem;
-}
-h2 {
-    font-size: 1.35rem;
-}
-.inline:hover {
-    text-decoration: underline;
-    color: #009dff;
-}
-
 
 
 
@@ -104,6 +88,27 @@ h2 {
 
 
 
+/* core elements */
+a {
+    /*border: 3px solid pink;*/
+    text-decoration: none;
+}
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.65rem;
+}
+h2 {
+    font-size: 1.35rem;
+}
+.inline:hover {
+    text-decoration: underline;
+    color: #009dff;
+}
+
+
+
 /* general */
 .indent {
     text-indent: .2rem;
@@ -138,23 +143,6 @@ h2 {
 }
 
 
-@media screen and (min-width: 900px){
-/* side by sides */
-    .sb-two {
-        display: inline-block;
-        max-width: 49%;
-        min-width: 35%;
-    }
-    .sb-three {
-        display: inline-block;
-        padding: 1rem;
-        max-width: 33%;
-        min-width: 20%;
-    }
-
-}
-
-
 /* debugging */
 .d1 {
     border: 1px solid green;
@@ -166,10 +154,10 @@ h2 {
     border: 1px solid rgb(2, 0, 128);
 }
 body {
-    /*border: 3px solid rgb(128, 15, 0);*/
+    /*border: 1px solid rgb(128, 15, 0);*/
 }
 div {
-    /*border: 2px solid rgb(0, 110, 255);*/
+    /*border: 1px solid rgb(0, 110, 255);*/
 }
 ul {
     /*border: 3px solid blue;*/

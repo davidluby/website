@@ -9,7 +9,7 @@
 
 /* id definitions*/
 #avatar {
-    width: 45%;
+    width: 40%;
     height: auto;
     border-radius: 50%;
     border: .1rem solid #007A33;
@@ -19,12 +19,6 @@
 }
 #card-body {
     font-size: 1rem;
-}
-
-
-#scrollPic {
-    width: 4vw;
-    height: auto;
 }
 
 
@@ -50,4 +44,5 @@
     width: 50%;
     height: auto;
     border-radius: 5%;
+    transition: all 500ms;
 }
