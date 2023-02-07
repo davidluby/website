@@ -2,7 +2,7 @@
 
 
 
-/* globals */
+/* compatability */
 html *{
     font-size: 100%;
     font-family: "Segoe UI Variable", "Trebuchet MS", Arial, Helvetica, sans-serif, "Times New Roman";
@@ -19,12 +19,25 @@ html *{
 	.alignright {
 		float: none;
 	}
+    .logo {
+        background-image: url("/static/images/logo.PNG");
+        background-size: 100%;
+    }
 }
 @media screen and (min-width: 950px){
     #body-back {
         margin-top: 10vh;
         margin-bottom: 7.5vh;
         background-color:rgb(240, 240, 240);
+    }
+    .logo {
+        background-image: url("/static/images/logo.svg");
+        background-size: 90%;
+        transition: all 500ms;
+    }
+    .logo:hover {
+        background-image: url("/static/images/logo.PNG");
+        background-size: 100%;
     }
     /* side by sides */
     .sb-two {
@@ -74,18 +87,9 @@ html *{
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-
-    background-image: url("/static/images/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
-    transition: all 500ms;
 }
-.logo:hover {
-    background-image: url("/static/images/logo.PNG");
-    background-size: 100%;
-}
-
 
 
 /* core elements */
@@ -93,11 +97,8 @@ a {
     /*border: 3px solid pink;*/
     text-decoration: none;
 }
-p {
-    font-size: 1rem;
-}
 h1 {
-    font-size: 1.65rem;
+    font-size: 1.75rem;
 }
 h2 {
     font-size: 1.35rem;

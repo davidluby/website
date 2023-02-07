@@ -1,9 +1,29 @@
 /* this document houses homepage-specific styling*/
 
+@media screen and (max-width: 950px){
+    #logo-linked {
+        background-image: url("/static/images/logo-linked.png");
+        background-size: 100%;
+    }
+}
+@media screen and (min-width: 950px){
+    #logo-linked {
+        background-image: url("/static/images/logo-linked.svg");
+        background-size: 85%;
+        transition: all 500ms;
+    }
+    #logo-linked:hover {
+        background-image: url("/static/images/logo-linked.png");
+        background-size: 100%;
+    }
+}
+
+
+
 /* class definitions*/
 .sb-mar-hom {
     margin-top: 15%;
-    margin-bottom: 7.5%;
+    margin-bottom: 15%;
 }
 
 
@@ -27,16 +47,8 @@
     margin: 0rem;
     height: 1.75rem;
     width: 1.75rem;
-
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/static/images/logo-linked.svg");
-    background-size: 85%;
-    transition: all 500ms;
-}
-#logo-linked:hover {
-    background-image: url("/static/images/logo-linked.png");
-    background-size: 100%;
 }
 
 
@@ -46,3 +58,5 @@
     border-radius: 5%;
     transition: all 500ms;
 }
+
+
