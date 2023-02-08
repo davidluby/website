@@ -5,15 +5,28 @@
         background-image: url("/static/images/logo-linked.png");
         background-size: 100%;
     }
+    #logo-github {
+        background-image: url("/static/images/logo-github.jpg");
+        background-size: 100%;
+    }
 }
 @media screen and (min-width: 950px){
     #logo-linked {
-        background-image: url("/static/images/logo-linked.svg");
+        background-image: url("/static/images/logo-linked.png");
         background-size: 85%;
         transition: all 500ms;
     }
     #logo-linked:hover {
-        background-image: url("/static/images/logo-linked.png");
+        background-image: url("/static/images/logo-linked.jpg");
+        background-size: 100%;
+    }
+    #logo-github {
+        background-image: url("/static/images/logo-github.png");
+        background-size: 85%;
+        transition: all 500ms;
+    }
+    #logo-github:hover {
+        background-image: url("/static/images/logo-github.jpg");
         background-size: 100%;
     }
 }
@@ -44,6 +57,13 @@
 
 
 #logo-linked {
+    margin: 0rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#logo-github {
     margin: 0rem;
     height: 1.75rem;
     width: 1.75rem;

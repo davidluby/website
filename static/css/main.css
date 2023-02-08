@@ -20,7 +20,7 @@ html *{
 		float: none;
 	}
     .logo {
-        background-image: url("/static/images/logo.PNG");
+        background-image: url("/static/images/logo.png");
         background-size: 100%;
     }
 }
@@ -31,12 +31,12 @@ html *{
         background-color:rgb(240, 240, 240);
     }
     .logo {
-        background-image: url("/static/images/logo.svg");
+        background-image: url("/static/images/logo-trans.png");
         background-size: 90%;
         transition: all 500ms;
     }
     .logo:hover {
-        background-image: url("/static/images/logo.PNG");
+        background-image: url("/static/images/logo.png");
         background-size: 100%;
     }
     /* side by sides */
