@@ -20,7 +20,7 @@ html *{
 		float: none;
 	}
     .logo {
-        background-image: url("/static/images/logo.png");
+        background-image: url("/static/images/logo.PNG");
         background-size: 100%;
     }
 }
