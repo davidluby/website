@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 950px){
     #logo-linked {
-        background-image: url("/static/images/logo-linked.png");
+        background-image: url("/static/images/logo-linked.jpg");
         background-size: 100%;
     }
     #logo-github {
